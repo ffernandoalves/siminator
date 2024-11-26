@@ -11,7 +11,6 @@ class ScreenInfo:
         "_current_width",
         "_current_height",
         "current_title",
-        "pg_info"
     ]
 
     def __init__(self,

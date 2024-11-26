@@ -27,7 +27,7 @@ class Camera:
         self.world_up = Vector3([0, 1, 0])
         self.target_position = Vector3([0, 0, 1])
         self.update()
-    
+
     def get_view_mat4(self):
         mat4 = si_math.lookAt(self.position, self.position + self.forward, self.up)
         return mat4
@@ -44,10 +44,10 @@ class Camera:
     def mouse_event(self, xoffset: float, yoffset: float):
         xoffset *= self.mouse_sensibility
         yoffset *= self.mouse_sensibility
-        
+
         self.yaw += xoffset
         self.pitch += yoffset
-        
+
         if self.pitch > 89.0:
             self.pitch = 89.0
         if self.pitch < -89.0:

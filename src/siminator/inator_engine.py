@@ -45,7 +45,6 @@ class InatorEngine:
     
     def add_models(self, models: typing.List[Drawable]) -> None:
         for m in models:
-            print(m.position)
             self._drawables.append(m)
 
     def renderer(self) -> None:
