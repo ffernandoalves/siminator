@@ -1,6 +1,9 @@
 Simulador físico conceitual feito em Python
 
-![Deploy](datas/graphycs/siminator_running.png)
+<!-- ![Deploy](datas/graphycs/siminator_running.png) -->
+<video width="500" height="500" controls>
+  <source src="datas/graphycs/cap1.mp4" type="video/mp4">
+</video>
 
 ## Como usar
 
