@@ -1,0 +1,44 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "siminator"
+authors = [
+    {name = "Fernando Ribeiro Alves", email = "fernandoribeiro889@gmail.com"}
+]
+keywords = ["cpython", "performance", "python", "simulation", "numeric", "physics", "math"]
+version = "0.0.1"
+requires-python = ">=3.11"
+license = {file = "LICENSE"}
+dynamic = [
+    "readme",
+    "dependencies",
+]
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Development Status :: 4 - Beta",
+    "Framework :: Pytest",
+    "Programming Language :: C++",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Operating System :: Microsoft :: Windows",
+    "Operating System :: POSIX :: Linux"
+]
+
+[project.urls]
+repository = "https://github.com/ffernandoalves/siminator"
+
+[tool.setuptools.dynamic]
+readme = {file = ["README.md"], content-type = "text/markdown"}
+dependencies = {file = ["requirements.txt"]}
+
+[tool.pytest.ini_options]
+addopts = [
+    "--import-mode=importlib",
+]
+testpaths = ["tests"]
+# pythonpath = "src"
